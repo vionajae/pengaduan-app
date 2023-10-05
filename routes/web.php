@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Administrator_Controller;
 use App\Http\Controllers\MasyarakatController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('tampilan_utama');
+    return view('tambah');
 });
 
 
@@ -29,6 +30,8 @@ Route::get('registrasi',[MasyarakatController::class,'registrasi']);
 Route::post('ol',[MasyarakatController::class,'masyarakat']);
 Route::get('login',[MasyarakatController::class,'login']);
 Route::post('login',[MasyarakatController::class,'ceklogin']);
+Route::get('dashboard',[MasyarakatController::class,'dashboard']);
 
-
+//data administrator
+Route::get('admin',[Administrator_Controller::class,'loginadmin']);
 

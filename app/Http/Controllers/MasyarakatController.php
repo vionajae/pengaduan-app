@@ -56,5 +56,9 @@ class MasyarakatController extends Controller
         return view ('tambah');
     }
 
+    public function dashboard(){
+        return view('Masyarakat.dashboard');
+    }
+
 }
 

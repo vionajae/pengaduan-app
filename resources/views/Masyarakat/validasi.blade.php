@@ -22,7 +22,7 @@
                     
                     @if($errors->any())
                     <div class="alert alert-success" role="alert">
-                       Gagal Regi3sxsstrasi 
+                       Gagal memasukan data
                       </div>
                     @endif
 
