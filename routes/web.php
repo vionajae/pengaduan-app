@@ -33,6 +33,7 @@ Route::post('login',[MasyarakatController::class,'ceklogin']);
 Route::get('dashboard',[MasyarakatController::class,'dashboard']);
 
 //data administrator
-Route::get('admin',[Administrator_Controller::class,'loginadmin']);
+Route::get('loginadmin',[Administrator_Controller::class,'loginadmin']);
+Route::get('tampilanutama',[Administrator_Controller::class,'dashboardadmin']);
 
 Route::get('/');

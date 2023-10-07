@@ -10,4 +10,8 @@ class Administrator_Controller extends Controller
         //buat objek model
         return view('admin.loginadmin');
     }
+
+    public function dashboardadmin(){
+        return view('admin.dashboardadmin');
+    }
 }

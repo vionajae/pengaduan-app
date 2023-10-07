@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registrasi</title>
+    <title>Login</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 <body>
@@ -49,7 +49,7 @@
                         <div class="mb-3">
                             <button class="btn form-control btn-primary mb-2">Login</button>
                             <button class="btn form-control btn-outline-success mb-2" type="reset">Batal</button>
-                        </div>
+                            <p class="text-center">Create New Account <a href="{{url('registrasi')}}">Registrasi</a>.</p>
                     </form>
                 </div>
             </div>

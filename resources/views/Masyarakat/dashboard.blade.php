@@ -30,15 +30,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Registrasi</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Laporan</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">Validasi</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">Tanggapan</a>
-              </li> 
               <div class="container-fluid">
                 <form class="d-flex" role="search">
                   <button class="btn btn-outline-success position-absolute top-2 end-0" type="submit">Logout</button>
@@ -51,8 +42,8 @@
 
       <div class="b-example-divider"></div>
 <div class="container my-5">
-  <div class="p-5 text-center bg-danger rounded-3 ">
-    <h1 class="text-body-emphasis">Layanan Aspirasi dan Pengaduan Online Rakyat</h1>
+  <div class="p-5 text-center bg-primary rounded-3 ">
+    <h1 class="text-body-emphasis ">Layanan Aspirasi dan Pengaduan Online Rakyat</h1>
     <p class="lead">
         Sampaikan laporan Anda langsung kepada instansi pemerintah berwenang
     </p>
@@ -69,6 +60,7 @@
               <i class="bi bi-caret-left-square-fill"></i>&nbsp;Kembali
           </a>
       </div>
+      
       <div class="card-body">
           <form action="" method="post">
               @csrf
@@ -109,10 +101,6 @@
                   </div>
               </div>
               <div class="mb-3">
-                  {{-- <button class="btn btn-success" type="reset"><i class="bi bi-x-square-fill"></i> Batal</button>
-                  <button class="btn btn-primary" type="submit">
-                      <i class="bi bi-save-fill"></i>&nbsp;Simpan  
-                  </button> --}}
                   <a href="tambah" class="btn btn-primary">tambah</a>
                   <a href="tampilan_utama" class="btn btn-primary">batal</a>
               </div>
