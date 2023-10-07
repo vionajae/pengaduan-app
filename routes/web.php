@@ -35,3 +35,4 @@ Route::get('dashboard',[MasyarakatController::class,'dashboard']);
 //data administrator
 Route::get('admin',[Administrator_Controller::class,'loginadmin']);
 
+Route::get('/');
