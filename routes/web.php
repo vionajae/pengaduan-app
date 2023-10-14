@@ -36,4 +36,4 @@ Route::get('dashboard',[MasyarakatController::class,'dashboard']);
 Route::get('loginadmin',[Administrator_Controller::class,'loginadmin']);
 Route::get('tampilanutama',[Administrator_Controller::class,'dashboardadmin']);
 
-Route::get('/');
+// Route::get('/');

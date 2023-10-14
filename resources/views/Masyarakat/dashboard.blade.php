@@ -13,22 +13,29 @@
             background-repeat: no-repeat;
             background-size: 100;
         }
+        .el{
+            margin-top: 100px;
+            /* margin-bottom: 100px; */
+            margin-left: 45%;
+            
+
+        }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Home</a>
+          <a class="navbar-brand" href="dashboard">Home</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Login</a>
+                <a class="nav-link active" aria-current="page" href="/login">Login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Registrasi</a>
+                <a class="nav-link" href="/registrasi">Registrasi</a>
               </li>
               <div class="container-fluid">
                 <form class="d-flex" role="search">
@@ -52,16 +59,21 @@
 
 
 
-<div class="container">
+<div class="el" style="height: 100px;">
+  <a href="{{url('tambah')}}" class="btn btn-outline-dark">Tulis Laporan Anda</a>
+  
+</div>
+
+{{-- <div class="container">
   <div class="card shadow mt-4">
       <div class="card-header d-flex text-bg-primary bg-gradient justify-content-between">
           <h4 class="card-title">Data</h4>
-          <a href="{{url('siswa')}}" class="btn btn-light">
+          <a href="{{url('dashboard')}}" class="btn btn-light">
               <i class="bi bi-caret-left-square-fill"></i>&nbsp;Kembali
           </a>
-      </div>
+      </div> --}}
       
-      <div class="card-body">
+      {{-- <div class="card-body">
           <form action="" method="post">
               @csrf
               <div class="mb-3 row">
@@ -107,7 +119,7 @@
           </form>
       </div>
   </div>
-</div>
+</div> --}}
 
 
 

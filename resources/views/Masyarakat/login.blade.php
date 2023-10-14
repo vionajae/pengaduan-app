@@ -8,6 +8,37 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 <body>
+
+    {{-- navbar --}}
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="dashboard">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Registrasi</a>
+              </li>
+              <div class="container-fluid">
+                <form class="d-flex" role="search">
+                  <button class="btn btn-outline-success position-absolute top-2 end-0" type="submit">Logout</button>
+                </form>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+
+
+
+
+
+
     <div id="min" class="d-flex align-items-center min-vh-100">
         <div class="container">
             <div class="card shadow m-auto" style="width: 400px;">
@@ -47,8 +78,10 @@
                         @enderror
                         </div>
                         <div class="mb-3">
-                            <button class="btn form-control btn-primary mb-2">Login</button>
-                            <button class="btn form-control btn-outline-success mb-2" type="reset">Batal</button>
+                            <a href="dashboard" class="btn form-control btn-primary mb-2">Login</a>
+                            <a href="dashboard" class="btn form-control btn-outline-success mb-2" type="reset">Batal</a>
+                            {{-- <button class="btn form-control btn-primary mb-2">Login</button> --}}
+                            {{-- <button class="btn form-control btn-outline-success mb-2" type="reset">Batal</button> --}}
                             <p class="text-center">Create New Account <a href="{{url('registrasi')}}">Registrasi</a>.</p>
                     </form>
                 </div>

@@ -12,7 +12,23 @@
         <div class="card shadow mt-4">
             <div class="card-header d-flex text-bg-primary bg-gradient justify-content-between">
                 <h4 class="card-title">Data</h4>
-                <a href="{{url('siswa')}}" class="btn btn-light">
+
+
+
+                @if(session('pesan'))
+                <div class="alert alert-success" role="alert">
+                   {{session('pesan')}} 
+                  </div>
+                @endif
+                
+                @if($errors->any())
+                <div class="alert alert-success" role="alert">
+                   Gagal Login
+                  </div>
+                @endif
+
+
+                <a href="{{url('dashboard')}}" class="btn btn-light">
                     <i class="bi bi-caret-left-square-fill"></i>&nbsp;Kembali
                 </a>
             </div>
@@ -60,8 +76,8 @@
                         <button class="btn btn-primary" type="submit">
                             <i class="bi bi-save-fill"></i>&nbsp;Simpan  
                         </button> --}}
-                        <a href="tambah" class="btn btn-primary">tambah</a>
-                        <a href="tampilan_utama" class="btn btn-primary">batal</a>
+                        <a href="" class="btn btn-primary">tambah</a>
+                        <a href="dashboard" class="btn btn-primary">batal</a>
                     </div>
                 </form>
             </div>
