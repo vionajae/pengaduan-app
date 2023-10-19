@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Administrator_Controller;
 use App\Http\Controllers\MasyarakatController;
+use App\Http\Middleware\ValidasiAdmin;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,7 +34,11 @@ Route::post('login',[MasyarakatController::class,'ceklogin']);
 Route::get('dashboard',[MasyarakatController::class,'dashboard']);
 
 //data administrator
+Route::prefix('admin')->group(function(){
+route::get('/',function(){
+return view ('admin.dashboardadmin');
+});
+});
 Route::get('loginadmin',[Administrator_Controller::class,'loginadmin']);
-Route::get('tampilanutama',[Administrator_Controller::class,'dashboardadmin']);
-
+route::post('loginadmin',[Administrator_Controller::class,'ceklogin']);
 // Route::get('/');
