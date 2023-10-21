@@ -16,7 +16,7 @@ class ValidasiAdmin
     public function handle(Request $request, Closure $next): Response
     {
         if(!session('username')){
-            return redirect('loginadmin');
+            return redirect('admin/loginadmin');
         }
 
 

@@ -11,10 +11,9 @@ class petugas extends Model
     //set tabel
     protected $table='petugas';
     //set primary key
-    protected $primaryKey='nik';
+    protected $primaryKey='id_petugas';
     public $incrementing=false;
     //set data primary key
-    protected $keyType='string';
     //string kolom yang dapat diisi secara massal
     protected $guarded=[]; 
 

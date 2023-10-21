@@ -26,23 +26,23 @@
                     
                     @if($errors->any())
                     <div class="alert alert-success" role="alert">
-                       Gagal Registrasi
+                       Gagal Regi3sxsstrasi 
                       </div>
                     @endif
 
-                    <form action="{{ url('ol') }}" method="POST">
+                    <form action="el" method="POST">
                         @csrf
                         <div class="mb-3">
-                            <label for="nik" class="form-label">Nik</label>
-                            <input type="text" class="form-control" name="nik" id="nik" placeholder="Nik">
-                            @error('nik')
+                            <label for="ip" class="form-label">id_petugas</label>
+                            <input type="text" class="form-control" name="ip" id="ip" placeholder="Id Petugas">
+                            @error('id_petugas')
                                 <div class="form-text">
                                     {{$message}}
                                 </div>
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="nama" class="form-label">Nama</label>
+                            <label for="nama" class="form-label">Nama_petugas</label>
                             <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama">
                             @error('nama')
                             <div class="form-text">
@@ -80,7 +80,7 @@
                         <div class="mb-3">
                             <button class="btn form-control btn-primary mb-2">Registrasi</button>
                             <button class="btn form-control btn-outline-success mb-2" type="reset">Batal</button>
-                            <p class="text-center">already have account sign in <a href="{{url('login')}}">login</a>.</p>
+                            <p class="text-center">already have account sign in <a href="{{url('admin/loginadmin')}}">login</a>.</p>
                         </div>
                     </form>
                 </div>

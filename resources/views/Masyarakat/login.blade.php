@@ -20,13 +20,8 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Registrasi</a>
-              </li>
               <div class="container-fluid">
                 <form class="d-flex" role="search">
-                  <button class="btn btn-outline-success position-absolute top-2 end-0" type="submit">Logout</button>
                 </form>
               </div>
             </ul>

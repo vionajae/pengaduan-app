@@ -21,6 +21,7 @@ Route::get('/', function () {
 });
 
 
+
 //data masyarakat
 Route::get('masyarakat',[MasyarakatController::class,'index']);
 Route::get('tambah',[MasyarakatController::class,'tambah']);
@@ -38,7 +39,12 @@ Route::prefix('admin')->group(function(){
 route::get('/',function(){
 return view ('admin.dashboardadmin');
 });
-});
+route::get('dashboardadmin',[Administrator_Controller::class,'dashboardadmin']);
 Route::get('loginadmin',[Administrator_Controller::class,'loginadmin']);
 route::post('loginadmin',[Administrator_Controller::class,'ceklogin']);
+route::get('regisadmin',[Administrator_Controller::class,'regis']);
+route::post('el',[Administrator_Controller::class,'petugas']);
+
+});
+
 // Route::get('/');
